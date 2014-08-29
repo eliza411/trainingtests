@@ -1,0 +1,13 @@
+default:
+  paths:
+    features: 'features'
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: ~
+      selenium2: ~
+      base_url: http://mockup.dspeak.com
+    Drupal\DrupalExtension\Extension:
+      blackbox: ~
+      api_driver: 'drupal' 
+      drupal: 
+        drupal_root: '/var/www/seven/drupal' 
